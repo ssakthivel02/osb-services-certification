@@ -1,0 +1,11 @@
+{
+  "apiVersion": "v1",
+  "certificateId": {"format": "opaque-uuid", "immutable": true},
+  "status": ["draft", "issued", "suspended", "revoked", "expired"],
+  "issueRequires": ["authenticatedIssuer", "tenantMatch", "assessmentEvidence", "idempotencyKey"],
+  "verification": {"publicEndpoint": true, "rateLimitPerMinute": 60, "minimalDisclosure": true},
+  "expiry": {"required": true, "renewalCreatesNewVersion": true},
+  "revocation": {"reasonRequired": true, "authorisedRoleRequired": true, "auditRequired": true},
+  "locales": ["en-GB", "ta-IN"],
+  "retentionYears": 7
+}

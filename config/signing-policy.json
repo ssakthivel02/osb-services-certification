@@ -1,0 +1,10 @@
+{
+  "algorithm": "EdDSA",
+  "keyStorage": "managed-kms-or-hsm",
+  "privateKeyExportable": false,
+  "keyRotationDays": 90,
+  "overlapDays": 14,
+  "signaturePayload": ["certificateId", "tenantId", "learnerIdHash", "qualificationId", "version", "issuedAt", "expiresAt", "status"],
+  "verificationKeys": {"published": true, "versioned": true, "cacheMaxAgeSeconds": 3600},
+  "compromiseResponse": {"revokeKey": true, "reissueAffectedCertificates": true, "securityIncident": true}
+}
